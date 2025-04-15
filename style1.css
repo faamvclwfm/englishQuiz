@@ -3,8 +3,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
 .container{
-    width: 70%;
-    height: 50vh;
     background-color: white;
     margin: 0 auto;
     margin-top: 10%;
@@ -14,6 +12,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     width: fit-content;
+    height: fit-content;
 }
 .container a{
     padding: 30px 20px;
