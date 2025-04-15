@@ -42,7 +42,7 @@ function markSelected(radio) {
     const allOptions = radio.closest(".space-y-3").querySelectorAll(".option-btn");
     allOptions.forEach(opt => opt.classList.remove("selected"));
     radio.nextElementSibling.classList.add("selected");
-  }
+}
   function updateProgress() {
     const total = questions.length;
     let answered = 0;
