@@ -1,0 +1,24 @@
+body {
+    background: linear-gradient(to right, #66d3da, #8bd572,#d76dbe,#dfdd6d);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.container{
+    width: 70%;
+    height: 50vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 60px;
+    border-radius: 20px;
+}
+.container a{
+    padding: 30px 20px;
+    background: linear-gradient(to right, #fda1f2,#f055de) ;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 20px;
+    text-decoration-line: none;
+    margin-right: 10px;
+}
