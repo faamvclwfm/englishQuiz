@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: auto;
 }
 .container a{
     padding: 30px 20px;
@@ -27,4 +28,5 @@ body {
     border-radius: 20px;
     text-decoration-line: none;
     margin-right: 30px;
+    margin-bottom: 20px;
 }
