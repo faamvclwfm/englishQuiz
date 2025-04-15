@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: auto;
+    width: fit-content;
 }
 .container a{
     padding: 30px 20px;
