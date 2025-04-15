@@ -5,14 +5,14 @@ body {
 .container{
     background-color: white;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 20px;
     padding: 60px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: fit-content;
-    height: fit-content;
+    height: 1000px;
 }
 .container a{
     padding: 30px 20px;
