@@ -85,11 +85,4 @@ const questions = [
     document.getElementById("result").innerText = `✅ Правильних відповідей: ${correctCount} з ${questions.length}`;
   }
 
-  // Timer
-  let seconds = 0;
-  setInterval(() => {
-    seconds++;
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 10 < 10 ? "0" + seconds % 60 : seconds % 60;
-    document.getElementById("timer").innerText = `⏱️ ${mins} хв : ${secs} сек`;
-  }, 1000);
+  
