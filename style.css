@@ -1,0 +1,20 @@
+body {
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb,#fbc2ee,#fbf9c2);
+  }
+  .option-btn {
+    transition: all 0.3s ease;
+  }
+  .option-btn:hover {
+    transform: scale(1.05);
+  }
+  .correct {
+    background-color: #c6f6d5 !important;
+    border-color: #38a169 !important;
+  }
+  .incorrect {
+    background-color: #fed7d7 !important;
+    border-color: #e53e3e !important;
+  }
+  .selected {
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.5);
+  }
