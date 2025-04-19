@@ -1,0 +1,101 @@
+.word-card{
+    background-color: white;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.word-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+      color: #3b82f6;
+      margin-bottom: 0.5rem;
+}
+.details-button{
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+      color: white;
+      border: none;
+      border-radius: 1rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+}
+.details-button:hover{
+    background: linear-gradient(to right, #2563eb, #7e22ce);
+}
+.modal{
+    position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      display: none;
+}
+.card{
+    background: white;
+      border-radius: 2rem;
+      padding: 2rem;
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+}
+
+.close-button{
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+      color: white;
+      border: none;
+      border-radius: 1rem;
+      margin-top: 1rem;
+      padding: 0.2rem 0.5rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+}
+.close-button:hover{
+    background: linear-gradient(to right, #2563eb, #7e22ce);
+}
+
+.practice-button{
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+      color: white;
+      border: none;
+      width: 40%;
+      text-align: center;
+      border-radius: 1rem;
+      margin-top: 2rem;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration-line: none;
+      margin: 0 auto;
+}
+.practice-button:hover{
+    background: linear-gradient(to right, #2563eb, #7e22ce);
+}
+.buttonsContainer{
+    padding: 1rem 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.back-button{
+    background: linear-gradient(to right, #e4af1a, #dfd21a);
+      color: white;
+      border: none;
+      width: 40%;
+      text-align: center;
+      border-radius: 1rem;
+      margin-top: 2rem;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration-line: none;
+      margin: 0 auto;
+}
+.back-button:hover{
+    background: linear-gradient(to right, #d2a731, #ccd12d);
+}
