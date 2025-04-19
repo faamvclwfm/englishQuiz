@@ -5,6 +5,9 @@
     padding: 1rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 .word-title{
     font-size: 1.25rem;
@@ -63,7 +66,7 @@
     background: linear-gradient(to right, #3b82f6, #9333ea);
       color: white;
       border: none;
-      width: 40%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -79,6 +82,10 @@
     background: linear-gradient(to right, #2563eb, #7e22ce);
 }
 .buttonsContainer{
+    background-color: white;
+    padding: 1rem 2rem;
+    width:40rem;
+    border-radius: 1.5rem;
     padding: 1rem 1.5rem;
     display: flex;
     gap: 0.5rem;
@@ -88,11 +95,10 @@
     background: linear-gradient(to right, #e4af1a, #dfd21a);
       color: white;
       border: none;
-      width: 40%;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 1rem;
+      border-radius: 1.5rem;
       margin-top: 2rem;
       padding: 1rem 1.5rem;
       cursor: pointer;
@@ -102,4 +108,12 @@
 }
 .back-button:hover{
     background: linear-gradient(to right, #d2a731, #ccd12d);
+}
+.backButton{
+    position: fixed;
+    padding: 0.25rem 0.5rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    top: 5px;
+    left: 5px;
 }

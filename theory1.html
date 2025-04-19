@@ -8,24 +8,15 @@
     <title>Document</title>
 </head>
 <body class="bg-gradient-to-br from-blue-200 via-pink-100 to-yellow-100 min-h-screen flex items-start justify-center p-4 flex-wrap gap-10">
-    <div class="bg-white bg-opacity-90 rounded-3xl shadow-xl p-6 sm:p-10 max-w-5xl w-full fade-in display: grid grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) gap: 1rem">
-        <h1 class="text-3xl sm:text-4xl font-semibold text-center text-gray-800 mb-8">Vocabulary List №1</h1>
-        <div class="word-card">
-            <p class="word-title">Fireworks</p>
-            <button class="details-button" onclick="openCard('fireworks')">Details</button>
-        </div>
-        <div class="word-card">
-            <p class="word-title">Anxiety</p>
-            <button class="details-button" onclick="openCard('anxiety')">Details</button>
-        </div>
-
-        <div class="buttonsContainer">
-            <a class="practice-button" href="test1.html">Practise!</a>
-            <a href="index.html" class="back-button">Back to tests</a>
-        </div>
-            
+    <div  id='container-word' class="  bg-white bg-opacity-90 rounded-3xl shadow-xl p-6 sm:p-10 max-w-5xl w-full fade-in display: grid grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) gap: 1rem">
+        <h1 class="text-3xl sm:text-4xl font-semibold text-center text-gray-800 mb-8">Vocabulary List №1</h1>  
     </div>
-
+    <div class="buttonsContainer">
+        <a class="practice-button" href="test1.html">Practise!</a>
+    </div>
+    <div class="backButton">
+        <a href="index.html" class="back-button">Back to tests</a>
+    </div>
     <div id="modal" class="modal">
             <div id="card" class="card">
             </div>
