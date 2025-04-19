@@ -64,7 +64,9 @@
       color: white;
       border: none;
       width: 40%;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border-radius: 1rem;
       margin-top: 2rem;
       padding: 1rem 1.5rem;
@@ -87,7 +89,9 @@
       color: white;
       border: none;
       width: 40%;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border-radius: 1rem;
       margin-top: 2rem;
       padding: 1rem 1.5rem;
