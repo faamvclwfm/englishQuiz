@@ -1,3 +1,6 @@
+#container-word{
+    position: relative;
+}
 .word-card{
     background-color: white;
     border-radius: 1.5rem;
@@ -105,15 +108,17 @@
       transition: background 0.3s ease;
       text-decoration-line: none;
       margin: 0 auto;
+      width: 100%;
 }
 .back-button:hover{
     background: linear-gradient(to right, #d2a731, #ccd12d);
 }
 .backButton{
-    position: fixed;
+    width: 20rem;
+    position: absolute;
     padding: 0.25rem 0.5rem;
     background-color: white;
     border-radius: 1.5rem;
-    top: 5px;
-    left: 5px;
+    top: 1.5rem;
+    left: 1.5rem;
 }
