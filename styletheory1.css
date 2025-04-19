@@ -86,12 +86,9 @@
 }
 .buttonsContainer{
     background-color: white;
-    padding: 1rem 2rem;
-    width:40rem;
+    width:60%;
     border-radius: 1.5rem;
     padding: 1rem 1.5rem;
-    display: flex;
-    gap: 0.5rem;
 }
 
 .back-button{
@@ -114,11 +111,8 @@
     background: linear-gradient(to right, #d2a731, #ccd12d);
 }
 .backButton{
-    
-    position: absolute;
-    padding: 0.25rem 0.5rem;
     background-color: white;
+    width:60%;
     border-radius: 1.5rem;
-    top: 1.5rem;
-    left: 1.5rem;
+    padding: 1rem 1.5rem;
 }
