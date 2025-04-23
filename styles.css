@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainSection{
+    display: flex;
+    flex-direction: row;
+}
+.gradient{
+    content: '';
+    width: 70%;
+    height: 100vh;
+    background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+}
+
+.white{
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.white a{
+    margin-bottom: 1rem;
+}
+a{
+    background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #c31432,#240b36 );  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right,#c31432, #240b36 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width:800px) {
+    .mainSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .gradient{
+        width: 100vw;
+        height: 70vh;
+    }
+    .white{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+}
