@@ -1,4 +1,4 @@
-const suffixQuestions = [
+const questions = [
     { word: "considerable", correct: "значний", options: ["незначний", "сумнівний", "значний"] },
     { word: "memorable", correct: "пам’ятний", options: ["забутній", "звичайний", "пам’ятний"] },
     { word: "recognisable", correct: "впізнаваний", options: ["невідомий", "впізнаваний", "невизначений"] },
