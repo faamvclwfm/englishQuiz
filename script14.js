@@ -2,7 +2,7 @@ const questions = [
     { word: "eager", correct: "нетерплячий / захоплений", options: ["нетерплячий / захоплений", "байдужий", "втомлений"] },
     { word: "fidgeting", correct: "непосидючість", options: ["непосидючість", "спокій", "задумливість"] },
     { word: "fidget (noun)", correct: "непосида", options: ["непосида", "тихоня", "розумник"] },
-    { word: "fidget (verb)", correct: "вертітись / крутитись", options: ["вертітись", "сидіти нерухомо", "заснути"] }
+    { word: "fidget (verb)", correct: "вертітись / крутитись", options: ["вертітись / крутитись", "сидіти нерухомо", "заснути"] }
   ];
   
   const quizContainer = document.getElementById('quizForm'

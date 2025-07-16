@@ -1,19 +1,19 @@
 const questions = [
     { word: "vivid / clear memory", correct: "яскрава або чітка пам’ять", options: ["яскрава або чітка пам’ять", "погана пам’ять", "вигадка"] },
-    { word: "vague / distant memory", correct: "розмита або нечітка пам’ять", options: ["розмита пам’ять", "ясний спогад", "нове враження"] },
+    { word: "vague / distant memory", correct: "розмита пам’ять", options: ["розмита пам’ять", "ясний спогад", "нове враження"] },
     { word: "memory like a sieve", correct: "пам’ять як решето", options: ["пам’ять як решето", "фотографічна пам’ять", "відмінна пам’ять"] },
     { word: "lose memory", correct: "втратити пам’ять", options: ["втратити пам’ять", "відновити пам’ять", "зберегти спогади"] },
     { word: "jog memory", correct: "освіжити пам’ять", options: ["освіжити пам’ять", "забути", "вигадати"] },
     { word: "photographic memory", correct: "фотографічна пам’ять", options: ["фотографічна пам’ять", "вибіркова пам’ять", "відсутність пам’яті"] },
-    { word: "have a good / terrible memory for sth", correct: "мати хорошу або жахливу пам’ять про щось", options: ["мати хорошу або жахливу пам’ять", "ніколи не пам’ятати", "не знати"] },
-    { word: "somebody’s earliest memory", correct: "чийсь найдавніший спогад", options: ["найдавніший спогад", "недавній досвід", "майбутня подія"] },
-    { word: "bear in mind", correct: "тримати в голові / пам’ятати", options: ["пам’ятати", "забути", "вигадати"] },
+    { word: "have a good / terrible memory for sth", correct: "мати хорошу або жахливу пам’ять", options: ["мати хорошу або жахливу пам’ять", "ніколи не пам’ятати", "не знати"] },
+    { word: "somebody’s earliest memory", correct: "чийсь найдавніший спогад", options: ["чийсь найдавніший спогад", "недавній досвід", "майбутня подія"] },
+    { word: "bear in mind", correct: "тримати в голові / пам’ятати", options: ["тримати в голові / пам’ятати", "забути", "вигадати"] },
     { word: "ring a bell", correct: "звучати знайомо", options: ["звучати знайомо", "дивувати", "не мати значення"] },
     { word: "escape you", correct: "не могти згадати", options: ["не могти згадати", "ясно пам’ятати", "відволіктись"] },
-    { word: "draw a blank", correct: "забути щось повністю", options: ["забути щось", "пригадати", "вигадати"] },
+    { word: "draw a blank", correct: "забути щось повністю", options: ["забути щось повністю", "пригадати", "вигадати"] },
     { word: "slipped somebody’s memory", correct: "забути про щось", options: ["забути про щось", "нагадати собі", "вивчити напам’ять"] },
     { word: "learn by heart", correct: "вивчити напам’ять", options: ["вивчити напам’ять", "переписати", "вигадати"] },
-    { word: "think back to sth", correct: "намагатись щось згадати", options: ["намагатись згадати", "вимислити", "забути"] }
+    { word: "think back to sth", correct: "намагатись щось згадати", options: ["намагатись щось згадати", "вимислити", "забути"] }
   ];
   
   const quizContainer = document.getElementById('quizForm'
