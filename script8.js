@@ -28,15 +28,15 @@ const questions = [
     <div class="p-6 bg-gray-50 rounded-2xl shadow-md">
     <p class="text-xl font-semibold text-gray-800 mb-4">${index+1}. ${q.word}</p>
     <div class="space-y-3">
-    ${shuffled.map(opt => {
+    ${shuffled.map(opt => 
         `
-         <label>
-            <input type='radio' name='q${index}' value='${opt} class='hidden' onchange="markSelected(this); updateProgress()"  />
+         <label class='block'>
+            <input type='radio' name='q${index}' value='${opt} class='hidden' onchange="markSelected(this); updateProgress()"  >
             <div class="option-btn border border-gray-300 rounded-xl px-5 py-3 text-gray-800 bg-white cursor-pointer">${opt}</div>
          </label>
         
         `
-    }).join('')}
+    ).join('')}
     </div>
     </div>
     `
