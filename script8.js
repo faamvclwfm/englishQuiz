@@ -31,7 +31,7 @@ const questions = [
     ${shuffled.map(opt => 
         `
          <label class='block'>
-            <input type='radio' name='q${index}' value='${opt} class='hidden' onchange="markSelected(this); updateProgress()"  >
+            <input type='radio' name='q${index}' value='${opt}' class='hidden' onchange="markSelected(this); updateProgress()"  >
             <div class="option-btn border border-gray-300 rounded-xl px-5 py-3 text-gray-800 bg-white cursor-pointer">${opt}</div>
          </label>
         
