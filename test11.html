@@ -6,6 +6,10 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body class="p-6 font-sans">
     <div class="fixed top-0 left-0 w-full bg-white shadow z-10">
@@ -26,7 +30,13 @@
           
         </form>
         <button type="button" onclick="checkAnswers()" class="mt-10 w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-4 rounded-2xl font-semibold text-xl shadow-lg hover:shadow-xl hover:from-blue-600 hover:to-indigo-700 transition">Перевірити</button>
-        <div id="result" class="mt-6 text-center text-2xl font-bold text-gray-800"></div>
+        <button type="button" id='tryagain' onclick="tryAgain()" class="mt-10 w-full bg-gradient-to-r from-green-500 to-blue-600 text-white py-4 rounded-2xl font-semibold text-xl shadow-lg hover:shadow-xl hover:from-blue-600 hover:to-indigo-700 transition hidden">Спробувати ще раз</button>
+        <div class="container">
+          <div class="circular-progress">
+              <span class="progress-value">0%</span>
+          </div>
+          <div id="result" class="mt-6 text-center text-2xl font-bold text-gray-800"></div>
+        </div>
       </div>
       <script src="script11.js"></script>
 </body>

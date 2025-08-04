@@ -19,3 +19,34 @@ body {
   .selected {
     box-shadow: 0 0 0 3px rgba(59,130,246,0.5);
   }
+  .circular-progress {
+    border-radius: 50%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(#7d2ae8 0deg,#ededed  0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease;
+}
+.circular-progress::before{
+    content: '';
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+}
+.progress-value{
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+}
+.container{
+  display: flex;
+  column-gap: 30px;
+  padding: 50px 30px;
+  justify-content: center;
+  align-items: center;
+}

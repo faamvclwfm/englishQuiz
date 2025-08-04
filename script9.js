@@ -75,6 +75,28 @@ function updateProgress() {
             }
         })
     })
+    let progressValue = document.querySelector('.progress-value'),
+    circuralProgress = document.querySelector('.circular-progress'),
+    progress;
+    let result= ( (correctCount * 100) / questions.length);
+    let progressStartValue = 0;
+    clearInterval(progress)
+     progress=setInterval(()=>{
+    
+            progressStartValue++;
+            if(progressStartValue>=result){
+                clearInterval(progress)
+            }
+            progressValue.textContent=result===0 ? `0%` : `${progressStartValue}%`;
+            circuralProgress.style.background=progressStartValue>60 ? `conic-gradient(#2ae84a ${progressStartValue * 3.6}deg,#ededed  0deg)` : `conic-gradient( #e82929 ${progressStartValue * 3.6}deg,#ededed  0deg)`
+        
+    },10)
+
+    document.getElementById('tryagain').style.display='block'
 
     document.getElementById('result').innerText=`✅ Правильних відповідей: ${correctCount} з ${questions.length}`
+  }
+
+  function tryAgain(){
+    window.location.reload()
   }

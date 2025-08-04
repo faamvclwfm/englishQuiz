@@ -4,7 +4,7 @@ const questions = [
     { word: "get a degree", correct: "отримати ступінь", options: ["отримати ступінь", "провалити курс", "почати навчання"] },
     { word: "dissertation", correct: "дисертація", options: ["дисертація", "резюме", "доклад"] },
     { word: "have a passion for something", correct: "мати пристрасть до чогось", options: ["мати пристрасть до чогось", "не цікавитися", "боятись"] },
-    { word: "to be passionate about something", correct: "бути захопленим чимось", options: ["бути захопленим  чимось", "бути байдужим", "бути здивованим"] },
+    { word: "to be passionate about something", correct: "бути захопленим чимось", options: ["бути захопленим чимось", "бути байдужим", "бути здивованим"] },
     { word: "sit exams", correct: "здавати іспити", options: ["здавати іспити", "писати твори", "грати в ігри"] },
     { word: "enrol on this course", correct: "записатися на курс", options: ["записатися на курс", "пропустити курс", "покинути навчання"] },
     { word: "deepen your knowledge", correct: "поглибити свої знання", options: ["поглибити свої знання", "забути все", "відволіктись"] },
@@ -80,6 +80,28 @@ function updateProgress() {
             }
         })
     })
+    let progressValue = document.querySelector('.progress-value'),
+    circuralProgress = document.querySelector('.circular-progress'),
+    progress;
+    let result= ( (correctCount * 100) / questions.length);
+    let progressStartValue = 0;
+    clearInterval(progress)
+     progress=setInterval(()=>{
+    
+            progressStartValue++;
+            if(progressStartValue>=result){
+                clearInterval(progress)
+            }
+            progressValue.textContent=result===0 ? `0%` : `${progressStartValue}%`;
+            circuralProgress.style.background=progressStartValue>60 ? `conic-gradient(#2ae84a ${progressStartValue * 3.6}deg,#ededed  0deg)` : `conic-gradient( #e82929 ${progressStartValue * 3.6}deg,#ededed  0deg)`
+        
+    },10)
+
+    document.getElementById('tryagain').style.display='block'
 
     document.getElementById('result').innerText=`✅ Правильних відповідей: ${correctCount} з ${questions.length}`
+  }
+
+  function tryAgain(){
+    window.location.reload()
   }
